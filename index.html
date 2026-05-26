@@ -953,7 +953,7 @@
 
     // ========== PWA ==========
     if ('serviceWorker' in navigator) {
-      fetch('/service-worker.js', { method: 'HEAD' })
+      fetch('service-worker.js', { method: 'HEAD' })
         .then(r => r.ok && navigator.serviceWorker.register('/service-worker.js'))
         .catch(() => {});
     }
